@@ -1,0 +1,665 @@
+@charset 'utf-8';
+
+:root {
+    --primary: #4ba5e8;
+    --secondary: #e9f921;
+    --base: #fff;
+    --text: #555;
+}
+
+body {
+    font-family: "Hiragino kaku gothic ProN", Meiryo, sans-serif;
+    line-height: 1.5;
+    color: var(--text)
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 60px;
+    }
+}
+
+/* 行揃え */
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+@media (max-width: 767px) {
+    .text-sp-right{
+        text-align: right;
+    }
+    .text-sp-center {
+        text-align: center;
+    }
+    .text-sp-left {
+        text-align: left;
+    }
+}
+
+/* フレキシブルボックス */
+.flex {
+    display: flex;
+}
+.justify-start {
+    justify-content: flex-start;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.align-start {
+    align-items: flex-start;
+}
+.align-end {
+    align-items: flex-end;
+}
+.align-center {
+    align-items: center;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+    .flex-sp {
+        display: flex;
+    }
+    .d-sp-block {
+        display: block;
+    }
+    .justify-sp-start {
+        justify-content: flex-start;
+    }
+    .justify-sp-end {
+        justify-content: flex-end;
+    }
+    .justify-sp-center {
+        justify-content: center;
+    }
+    .justify-sp-between {
+        justify-content: space-between;
+    }
+    .align-sp-start {
+        align-items: flex-start;
+    }
+    .align-sp-end {
+        align-items: flex-end;
+    }
+    .align-sp-center {
+        align-items: center;
+    }
+    .flex-sp-wrap{
+        flex-wrap: wrap;
+    }
+}
+
+/* グリッドシステム */
+.col-1{width: 6.5%;}
+.col-2 {width: 15%;}
+.col-3{width: 23.5%;}
+.col-4{width: 32%;}
+.col-5{width: 40.5%;}
+.col-6{width: 49%;}
+.col-7{width: 57.5%;}
+.col-8 {width: 66%;}
+.col-9{width: 74.5%;}
+.col-10{width: 83%;}
+.col-11{width: 91.5%;}
+.col-12{width: 100%;}
+/* class属性値+col-を含む要素 */
+/*例<div class=".col-8">, <p class="box col-2"> */
+[class*=col-] {
+    margin-right: 2%;
+}
+
+@media (max-width: 767px) {
+    .col-sp-1 {width: 6.5%;}
+    .col-sp-2 {width: 15%;}
+    .col-sp-3 {width: 23.5%;}
+    .col-sp-4 {width: 32%;}
+    .col-sp-5 {width: 40.5%;}
+    .col-sp-6 {width: 49%;}
+    .col-sp-7 {width: 57.5%;}
+    .col-sp-8 {width: 66%;}
+    .col-sp-9 {width: 74.5%;}
+    .col-sp-10 {width: 83%;}
+    .col-sp-11 {width: 91.5%;}
+    .col-sp-12 {width: 100%;}
+}
+
+.container {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.tel {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: #ccc;
+    display: inline-block;
+    line-height: 1;
+    padding: 14px 24px;
+    font-size: .875rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #fff;
+}
+.btn-block {
+    display: block;
+}
+
+
+.section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.section-head {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--primary);
+}
+
+/* ヘッダー */
+.site-header {
+    height: 80px;
+    background-color: #fff;
+}
+
+.site-header-logo {
+    width: 270px;
+}
+
+.site-header-tel {
+    font-size: 1.5rem;
+    /* font-size: calc(24 / 16 * 1rem); */
+}
+.site-header-tel:before {
+    content: '';
+    background:url(../img/ico-phone.svg) no-repeat center center;
+    width:24px;
+    height: 24px;
+    display: inline-block;
+    margin-right: 8px;
+    /* vertical-align: middle; */
+    transform: translateY(3px);
+}
+
+.site-header-contact-hour {
+    display: block;
+    font-size: .75rem;
+    margin-top: -5px;
+}
+.site-header-addres {
+    margin-right: 10px;
+}
+
+.site-header-btn-nav {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .site-header {
+        height: 60px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    .site-header-contact {
+        display: none;
+    }
+
+    .site-header-btn-nav {
+        display:block;
+    }
+
+    /* .site-header-btn-nav img {
+        width: 30px;
+    } */
+    
+    .site-header-btn-nav i {
+        font-size: 30px;
+    }
+    
+}
+
+/* グローバルナビゲーション */
+.globalnav {
+    height: 60px;
+}
+
+.globalnav ul {
+    margin: 0;
+    height: 100%;
+    line-height: 1;
+}
+
+.globalnav ul li {
+    border-left: 2px  solid var(--primary);
+}
+
+.globalnav ul li:last-child {
+    border-right: 2px solid var(--primary);
+}
+
+.globalnav ul li a {
+    display: block;
+    padding: 0 20px;
+    color: var(--text)
+}
+
+.globalnav-contact {
+    display: none;
+}
+
+@media (max-width: 767px) {
+
+    .globalnav {
+        height: 0;
+        background-color: #fff;
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        overflow: hidden;
+        transition: height .5s;
+    }
+    
+    .globalnav.is-show {
+        height: 258px;
+    }
+
+    .globalnav ul {
+    height: auto;
+    }
+
+    .globalnav ul li {
+        border-left: none;
+        border-top: 1px solid #ccc;
+    }
+    
+    .globalnav ul li:last-child {
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    .globalnav ul li a {
+        padding: 10px 15px;
+
+    }
+    
+    .globalnav-contact {
+        display: block;
+        padding: 15px;
+    }
+
+
+}
+
+/* メインビジュアル */
+.main-visual {
+    height: 500px;
+    background-color: yellow;
+    position: relative;
+}
+
+.main-visual-mv {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 40% 20%;
+}
+
+.main-visual-text {
+    position: absolute;
+    right: 7%;
+    bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    .main-visual {
+        height: 400px;
+    }
+    .main-visual-text {
+        width: 90%;
+    }
+    
+}
+
+
+/* お知らせピックアップ */
+.pickup-info {
+    margin-top: -50px;
+    position: relative;
+}
+.pickup-info dl {
+    background-color: var(--primary);
+    color: #fff;
+    border-radius: 40px;
+    padding: 25px;
+}
+
+.pickup-info dl dt {
+    padding-right: 20px;
+    border-right: 2px solid #fff;
+    margin-right: 20px;
+}
+
+.pickup-info dl dd {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .pickup-info dl {
+        border-radius: 18px;
+        padding: 10px 20px;
+    }
+    .pickup-info dl dt {
+        padding-right: 0;
+        border-right: none;
+        margin-right: 0;
+    }
+}
+
+/* 当クリニックの特徴 */
+.feature-list-item:last-child {
+    margin-right: 0%;
+}
+
+.feature-list-ico {
+    height: 200px;
+}
+.feature-list-ico img {
+    width: 200px;
+}
+.feature-list-title {
+    font-weight: bold;
+    color: var(--primary);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    .feature-list-item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+}
+
+/* 院長からの一言 */
+.greeting {
+    background: var(--primary) url(../img/greeting-bg.jpg);
+}
+
+.greeting-head {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+.greeting-head img {
+    display: block;
+}
+.greeting-text {
+    color: #fff;
+}
+.greeting-director {
+    margin-right: 0;
+    position: relative;
+}
+
+.greeting-director-photo {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+}
+
+.greeting-director-links {
+    position: absolute;
+    right: 0;
+    bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .greeting-director-photo {
+        position: static;
+        margin-top: -40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+.greeting-director-links {
+    right: 20%;
+}
+
+}
+
+/* スタッフブログ */
+.blog-article {
+    margin-bottom: 40px;
+}
+.blog-article:nth-child(2n) {
+    margin-right: 0;
+}
+
+.blog-article-thumb {
+    width: 140px;
+    margin-right:  25px;
+    flex-shrink: 0;
+}
+
+.blog-article-thumb img {
+    width:100%;
+}
+
+.blog-article-desc {
+    flex-grow: 1;
+}
+
+.blog-article-link {
+    color: var(--text);
+}
+
+.blog-article-title {
+    margin: 20px 0 0;
+}
+
+.blog-article-date {
+    line-height: 1;
+}
+
+
+/*  クリニックからのお知らせ*/
+.info-list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.info-list li {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.info-list li:last-child {
+    border-bottom: 1px solid #ccc;
+}
+
+.info-list li time {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.info-fb {
+    margin-right: 0;
+}
+
+@media (max-width: 767px) {
+    .info-list {
+        margin-bottom: 25px;
+    }
+
+}
+
+/* フッター */
+.site-footer-clinic-info {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+.site-footer-logo {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.site-footer-logo img {
+    width: 80%;
+}
+
+.site-footer-address {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.site-footer-contact {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.site-footer-open-hours {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.site-footer-tel {
+    font-size: 2rem;
+}
+
+.site-footer-tel:before {
+    content: '';
+    background:url(../img/ico-phone.svg) no-repeat center center;
+    width:32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 8px;
+    /* vertical-align: middle; */
+    transform: translateY(5px);
+}
+
+.site-footer-contact-hour {
+    display: block;
+    font-size: .875rem;
+}
+
+.site-footer-open-hours img {
+    width: 100%;
+}
+
+.site-footer-map {
+    margin-right: 0;
+}
+
+.site-footer-map img {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.site-footer-nav {
+    background-color: var(--primary);
+    padding: 30px 0;
+}
+
+.site-footer-nav-list {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.site-footer-nav-list li {
+    margin-right: 30px;
+}
+
+.site-footer-nav-list li:last-child {
+    margin-right: 0;
+}
+.site-footer-nav-list li  a {
+    color: #fff;
+}
+.site-footer-sns {
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.site-footer-sns a {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.site-footer-copyright {
+    color: #fff;
+    font-size: .875rem;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .site-footer-open-hours img {
+        width: auto;
+        max-width: 100%;
+    }    
+
+    .site-footer-clinic-detail {
+        margin-bottom: 30px;
+    }
+
+    .site-footer-nav-list li  a {
+        display: block;
+        padding: 5px 0;
+    }
+}

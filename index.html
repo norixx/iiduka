@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>おくもとクリニック</title>
+    <meta name="description" content="駅から徒歩1分、土日も診療　みんなの笑顔を作るクリニックを目指して">
+    <meta name="keywords" content="歯科,西所沢,土日診療">
+    <link rel="stylesheet" href="css/sanitize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v8.0" nonce="XrvEtWeP"></script>
+
+    <!-- ヘッダー -->
+    <header class="site-header flex justify-between container align-center">
+        <h1 class="site-header-logo"><a href="#"><img src="img/logo.svg" alt="おくもとクリニック"></a></h1>
+        <div class="site-header-contact flex align-center">
+            <address class="site-header-addres">
+                <a href="tel:042-093-8320" class="tel site-header-tel">042-093-8320</a>
+                <span class="site-header-contact-hour text-right">受付時間 9:00 ~ 19:00</span>
+            </address>
+            <a href="#" class="btn btn-primary">ご予約・お問い合わせ</a>
+        </div>
+        <div class="site-header-btn-nav" id="btn-nav">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!--ナビゲーション -->
+    <nav class="globalnav" id="globalnav">
+        <ul class="flex d-sp-block justify-center align-center">
+            <li><a href="#">ホーム</a></li>
+            <li><a href="#">当院について</a></li>
+            <li><a href="#">診療案内</a></li>
+            <li><a href="#">スタッフ紹介</a></li>
+            <li><a href="#">お知らせ・ブログ</a></li>
+        </ul>
+        <div class="globalnav-contact">
+            <a href="#" class="btn btn-primary btn-block">ご予約・お問い合わせ</a>
+        </div>
+    </nav>
+
+    <!-- メインビジュアル -->
+    <div class="main-visual">
+        <img 
+            srcset="
+                img/main-visual-sm.jpg 767w,
+                img/main-visual.jpg
+            "
+            src="img/main-visual.jpg" alt="" class="main-visual-mv">
+        <img src="img/main-visual-text.png" alt="駅から徒歩1分、土日も診療　みんなの笑顔を作るクリニックを目指して" class="main-visual-text">
+    </div>
+
+    <!-- お知らせピックアップ -->
+    <div class="pickup-info flex justify-center container">
+        <dl class="col-8 col-sp-12 flex d-sp-block">
+            <dt>お知らせピックアップ</dt>
+            <dd>2020.2.18 歯科学会出席のため3月1日は休診となります</dd>
+        </dl>
+    </div>
+
+    <!-- 当クリニックの特徴 -->
+    <section class="container feature section">
+        <h2 class="section-head feature-head text-center">当クリニックの特徴</h2>
+
+        <div class="flex  d-sp-block feature-list">
+            <div class="col-4 col-sp-12 text-center feature-list-item">
+                <figure class="feature-list-ico flex align-center justify-center">
+                    <img src="img/ico-feature-weekend.svg" alt="">
+                </figure>
+                <p class="feature-list-title">土日診療</p>
+                <p>平日に通いにくいという方へ、<br>土日診療を実施しております</p>
+            </div>
+            <div class="col-4 col-sp-12 text-center feature-list-item">
+                <figure class="feature-list-ico flex align-center justify-center">
+                    <img src="img/ico-feature-family.svg" alt="">
+                </figure>
+                <p class="feature-list-title">ファミリー</p>
+                <p>小児歯科を併設していますので、<br>お子様も安心して通えます</p>
+            </div>
+            <div class="col-4 col-sp-12 text-center feature-list-item">
+                <figure class="feature-list-ico flex align-center justify-center">
+                    <img src="img/ico-feature-beauty.svg" alt="">
+                </figure>
+                <p class="feature-list-title">審美歯科</p>
+                <p>ホワイトニング、歯肉の色、<br>口内の気になるところご相談ください</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 院長からの一言 -->
+    <section class="greeting">
+        <div class="container flex d-sp-block">
+            <div class="col-8 col-sp-12">
+                <h2 class="greeting-head">
+                    <img src="img/greeting-balloon.svg" alt="院長からの一言">
+                    こわくない・痛くない治療を目指して
+                </h2>
+                <p class="greeting-text">
+                    痛くない治療を心がけ歯医者さんへのマイナスなイメージを払拭し、安心して治療や予防を受けられるように尽力いたします。<br>
+                    虫歯治療や歯周病等の疾患のみにとどまらず、審美（見た目の美しさ）的な側面からも持てる全ての技術をフルに生かしてあなたのお口を守っていきます。<br>
+                    地域に根ざした医院であるべく、心のこもった丁寧な治療、応接を心掛けてまいります。
+                </p>
+                <p class="greeting-text text-right">院長 奥本忠行</p>
+            </div>
+            <div class="greeting-director col-4 col-sp-12">
+                <img src="img/greeting-director.png" alt="おくもとクリニック院長 奥本忠行" class="greeting-director-photo">
+                <div class="greeting-director-links">
+                    <a href="#"><img src="img/greeting-btn-doctors-profile.png" alt="ドクターズプロフィール"></a>
+                    <a href="#"><img src="img/greeting-btn-profile.png" alt="院長プロフィール"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スタッフブログ -->
+    <section class="section container blog">
+        <h2 class="section-head">スタッフブログ </h2>
+
+        <div class="flex flex-wrap d-sp-block">
+            <article class="blog-article col-6 col-sp-12">
+                <a href="#" class="blog-article-link flex">
+                    <figure class="blog-article-thumb">
+                        <img src="img/blog-thumb1.jpg" alt="">
+                    </figure>
+                    <div class="blog-article-desc">
+                        <time datetime="2020-3-7" class="blog-article-date">2020.3.7</time>
+                        <h3 class="blog-article-title">新型コロナウイルス予防について</h3>
+                    </div>
+                </a>
+            </article>
+    
+            <article class="blog-article col-6 col-sp-12">
+                <a href="#" class="blog-article-link flex">
+                    <figure class="blog-article-thumb">
+                        <img src="img/blog-thumb2.jpg" alt="">
+                    </figure>
+                    <div class="blog-article-desc">
+                        <time datetime="2020-2-19" class="blog-article-date">2020.2.19</time>
+                        <h3 class="blog-article-title">子供のためのむし歯予防はみがき会開催しました！</h3>
+                    </div>
+                </a>
+            </article>
+    
+            <article class="blog-article col-6 col-sp-12">
+                <a href="#" class="blog-article-link flex">
+                    <figure class="blog-article-thumb">
+                        <img src="img/blog-thumb3.jpg" alt="">
+                    </figure>
+                    <div class="blog-article-desc">
+                        <time datetime="2019-12-21" class="blog-article-date">2019.12.21</time>
+                        <h3 class="blog-article-title">子どもの矯正中にお母さんがやってはいけないこと</h3>
+                    </div>
+                </a>
+            </article>
+    
+            <article class="blog-article col-6 col-sp-12">
+                <a href="#" class="blog-article-link flex">
+                    <figure class="blog-article-thumb">
+                        <img src="img/blog-thumb4.jpg" alt="">
+                    </figure>
+                    <div class="blog-article-desc">
+                        <time datetime="2019-12-7" class="blog-article-date">2019.12.7</time>
+                        <h3 class="blog-article-title">歯ブラシ交換のタイミング</h3>
+                     </div>
+                </a>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- クリニックからのお知らせ -->
+    <section class="container section info">
+        <h2 class="section-head">クリニックからのお知らせ</h2>
+        <div class="flex d-sp-block">
+            <ul class="col-8 col-12 info-list">
+                <li class="flex">
+                    <time datetime="2020-3-1">2020.3.1</time>
+                    <a href="#">新型コロナウイルス予防について</a>
+                </li>
+            
+        
+                <li class="flex">
+                    <time datetime="2020-2-20">2020.2.20</time>
+                    <a href="#">2月21日（水）診療時間変更のご案内</a>
+                </li>
+            
+            
+                <li class="flex">
+                    <time datetime="2020-1-9">2020.1.9</time>
+                    <a href="#">1月☆ホワイトニングキャンペーン☆</a>
+                </li>
+            </ul>
+            <div class="col-4 col-12 info-fb text-sp-center">
+                <div class="fb-page" data-href="https://www.facebook.com/okumotodummy/" data-tabs="timeline" data-width="304" data-height="300" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/okumotodummy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/okumotodummy/">おくもとダミークリニック</a></blockquote></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <!-- クリニック情報 -->
+        <div class="site-footer-clinic-info">
+            <div class="container flex d-sp-block">
+                <!--  クリニック詳細-->
+                <div class="col-5 col-sp-12 text-center site-footer-clinic-detail">
+                    <p class="site-footer-logo">
+                        <img src="img/logo.svg" alt="おくもとクリニック">
+                    </p>
+                    <p class="site-footer-address">〒359-1144 埼玉県所沢市西所沢１丁目２３−３</p>
+                    <address class="site-footer-contact">
+                        <a href="tel:042-093-8320" class="tel site-footer-tel">042-093-8320</a>
+                        <span class="site-footer-contact-hour">受付時間 9:00～19:00</span>
+                    </address>
+                    <p class="site-footer-open-hours">
+                        <img src="img/open-hours.png" alt="診療時間 午前 9:00～12:00 午後 14:30～19:00(土日の診療は17:00まで)">
+                    </p>
+                    <p >
+                        <a href="#" class="btn btn-primary">ご予約・お問い合わせ</a>
+                    </p>
+                </div>
+    
+                <!--  地図-->
+                <div class="col-7 col-sp-12 site-footer-map">
+                    <img src="img/map.png" alt="おくもとクリニック アクセスマップ">
+                    <a href="#">大きな地図で見る<i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        
+        </div>
+
+        <!--  フッターナビゲーション-->
+        <div class="site-footer-nav">
+
+            <div class="container">
+                <nav>
+                    <ul class="flex d-sp-block justify-center site-footer-nav-list">
+                        <li><a href="#">ホーム</a></li>
+                        <li><a href="#">当院について</a></li>
+                        <li><a href="#">診療案内</a></li>
+                        <li><a href="#">スタッフ紹介</a></li>
+                        <li><a href="#">お知らせ・ブログ</a></li>
+                    </ul>
+                </nav>
+                <!-- SNS -->
+                <div class="site-footer-sns text-center">
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <p class="site-footer-copyright text-center">
+                    <small>&copy;2020 OKUMOTO DENTAL CLINIC</small>
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
